@@ -127,7 +127,9 @@ btn.addEventListener("click",function(){
 document.getElementById('review_c').style.color="red";
 
 
-
+function showalert(){
+    alert("訂單已送出!!");
+  }
 
 
 
