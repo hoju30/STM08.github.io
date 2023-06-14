@@ -125,15 +125,11 @@ btn.addEventListener("click",function(){
     content.value="";
 })
 document.getElementById('review_c').style.color="red";
-
-
 function showalert(){
     alert("訂單已送出!!");
   }
-
 function eraseText() {
     document.getElementById("data").value = "";
 }
-
 
 
