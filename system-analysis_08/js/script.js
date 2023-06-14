@@ -131,5 +131,9 @@ function showalert(){
     alert("訂單已送出!!");
   }
 
+function eraseText() {
+    document.getElementById("data").value = "";
+}
+
 
 
