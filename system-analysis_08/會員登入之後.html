@@ -19,6 +19,14 @@
                   elements[i].value = "";
               }
         }    
+        
+        function scrollToOption(optionIndex) {
+      var selectElement = document.getElementById('mySelect');
+      var optionElement = selectElement.options[optionIndex - 1];
+      optionElement.selected = true;
+      selectElement.scrollTop = optionElement.offsetTop;
+    }
+        
         var btn = document.getElementById('btn_c')
 var content = document.getElementById('content')
 var list = document.getElementById('list')
