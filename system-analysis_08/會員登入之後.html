@@ -27,18 +27,22 @@
       selectElement.scrollTop = optionElement.offsetTop;
     }
         
-        var btn = document.getElementById('btn_c')
-var content = document.getElementById('content')
-var list = document.getElementById('list')
-btn.addEventListener("click",function(){
-    list.innerHTML = list.innerHTML + `
-    <div class="article">
-        <p>${content.value}</p>
-    </div>
-    `;
-    content.value="";
-})
-document.getElementById('review_c').style.color="red";
+    document.addEventListener("DOMContentLoaded", function() {
+        var btn = document.getElementById('btn_c');
+        var content = document.getElementById('content');
+        var list = document.getElementById('list');
+
+        btn.addEventListener("click", function() {
+            list.innerHTML = list.innerHTML + `
+                <div class="article">
+                    <p>${content.value}</p>
+                </div>
+            `;
+            content.value = "";
+        });
+
+        // document.getElementById('review_c').style.color = "red";
+    });
 
     </script>
 </head>
