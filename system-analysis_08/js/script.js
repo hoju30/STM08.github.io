@@ -255,9 +255,11 @@ btn.addEventListener("click",function(){
     content.value="";
 })
 document.getElementById('review_c').style.color="red";
+
 function showalert(){
     alert("訂單已送出!!");
-  }
+}
+
 function eraseText() {
   var elements = document.getElementsByClassName("data");
   for (var i = 0; i < elements.length; i++) {
