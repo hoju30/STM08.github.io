@@ -304,7 +304,7 @@ document.getElementById('review_c').style.color="red";
                     </div>
 
                     <div class="inputbox data">
-                        <select >
+                        <select id="mySelect">
                             <option>請選擇您要購買的課程</option>
                             <option id="t1" value="50">高等微積分</option>
                             <option id="t2" value="150">一起解剖學</option>
@@ -314,7 +314,7 @@ document.getElementById('review_c').style.color="red";
                     </div>
 
                     <textarea  placeholder="備註" class="data" ></textarea>
-                    <input type="button" value="購買" class="btn3" id="submit" onclick="showalert();eraseText();">
+                    <input type="button" value="購買" class="btn3" id="submit" onclick="showalert();eraseText();scrollToOption(1);">
 
                 </form>
 
