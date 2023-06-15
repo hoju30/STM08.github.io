@@ -242,23 +242,7 @@ button1.addEventListener('click', () => {
 });
 
 
-//*新增 評論區
-var btn = document.getElementById('btn_c')
-var content = document.getElementById('content')
-var list = document.getElementById('list')
-btn.addEventListener("click",function(){
-    list.innerHTML = list.innerHTML + `
-    <div class="article">
-        <p>${content.value}</p>
-    </div>
-    `;
-    content.value="";
-})
-document.getElementById('review_c').style.color="red";
 
-function showalert(){
-    alert("訂單已送出!!");
-}
 
 function eraseText() {
   var elements = document.getElementsByClassName("data");
